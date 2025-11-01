@@ -5,7 +5,7 @@
 #include <vector>
 #include <list>
 
-enum class CmdType{ ADD, REMOVE, HELP, UNKNOWN};
+enum class CmdType{ ADD, REMOVE, HELP, UNKNOWN, HISTORY};
 
 class CLI
 {
