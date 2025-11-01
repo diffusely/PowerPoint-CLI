@@ -1,5 +1,5 @@
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o: \
- /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/parse.cpp \
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o: \
+ /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Parser/parse.cpp \
  /usr/include/stdc-predef.h \
  /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes/parser.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \

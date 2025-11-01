@@ -47,6 +47,5 @@ protected:
 	void executeShow(const ShowCommand& cmd);
 	void executeHelp();
 	
-
-	std::vector<std::pair<std::string, std::string>> m_slides; 
+	std::vector<std::pair<std::string, std::string>> m_slides;
 };

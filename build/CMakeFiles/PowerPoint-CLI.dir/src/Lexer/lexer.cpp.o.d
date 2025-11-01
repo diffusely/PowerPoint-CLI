@@ -1,7 +1,7 @@
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o: \
- /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/token.cpp \
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o: \
+ /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/lexer.cpp \
  /usr/include/stdc-predef.h \
- /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes/token.h \
+ /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes/lexer.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,4 +150,17 @@ CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h \
+ /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes/token.h

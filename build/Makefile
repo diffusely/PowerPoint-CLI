@@ -129,6 +129,78 @@ PowerPoint-CLI/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/build
 .PHONY : PowerPoint-CLI/fast
 
+src/Lexer/lexer.o: src/Lexer/lexer.cpp.o
+.PHONY : src/Lexer/lexer.o
+
+# target to build an object file
+src/Lexer/lexer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o
+.PHONY : src/Lexer/lexer.cpp.o
+
+src/Lexer/lexer.i: src/Lexer/lexer.cpp.i
+.PHONY : src/Lexer/lexer.i
+
+# target to preprocess a source file
+src/Lexer/lexer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.i
+.PHONY : src/Lexer/lexer.cpp.i
+
+src/Lexer/lexer.s: src/Lexer/lexer.cpp.s
+.PHONY : src/Lexer/lexer.s
+
+# target to generate assembly for a file
+src/Lexer/lexer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.s
+.PHONY : src/Lexer/lexer.cpp.s
+
+src/Lexer/token.o: src/Lexer/token.cpp.o
+.PHONY : src/Lexer/token.o
+
+# target to build an object file
+src/Lexer/token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o
+.PHONY : src/Lexer/token.cpp.o
+
+src/Lexer/token.i: src/Lexer/token.cpp.i
+.PHONY : src/Lexer/token.i
+
+# target to preprocess a source file
+src/Lexer/token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.i
+.PHONY : src/Lexer/token.cpp.i
+
+src/Lexer/token.s: src/Lexer/token.cpp.s
+.PHONY : src/Lexer/token.s
+
+# target to generate assembly for a file
+src/Lexer/token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.s
+.PHONY : src/Lexer/token.cpp.s
+
+src/Parser/parse.o: src/Parser/parse.cpp.o
+.PHONY : src/Parser/parse.o
+
+# target to build an object file
+src/Parser/parse.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o
+.PHONY : src/Parser/parse.cpp.o
+
+src/Parser/parse.i: src/Parser/parse.cpp.i
+.PHONY : src/Parser/parse.i
+
+# target to preprocess a source file
+src/Parser/parse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.i
+.PHONY : src/Parser/parse.cpp.i
+
+src/Parser/parse.s: src/Parser/parse.cpp.s
+.PHONY : src/Parser/parse.s
+
+# target to generate assembly for a file
+src/Parser/parse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.s
+.PHONY : src/Parser/parse.cpp.s
+
 src/cli.o: src/cli.cpp.o
 .PHONY : src/cli.o
 
@@ -152,30 +224,6 @@ src/cli.s: src/cli.cpp.s
 src/cli.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s
 .PHONY : src/cli.cpp.s
-
-src/lexer.o: src/lexer.cpp.o
-.PHONY : src/lexer.o
-
-# target to build an object file
-src/lexer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o
-.PHONY : src/lexer.cpp.o
-
-src/lexer.i: src/lexer.cpp.i
-.PHONY : src/lexer.i
-
-# target to preprocess a source file
-src/lexer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.i
-.PHONY : src/lexer.cpp.i
-
-src/lexer.s: src/lexer.cpp.s
-.PHONY : src/lexer.s
-
-# target to generate assembly for a file
-src/lexer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.s
-.PHONY : src/lexer.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -201,54 +249,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/parse.o: src/parse.cpp.o
-.PHONY : src/parse.o
-
-# target to build an object file
-src/parse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o
-.PHONY : src/parse.cpp.o
-
-src/parse.i: src/parse.cpp.i
-.PHONY : src/parse.i
-
-# target to preprocess a source file
-src/parse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.i
-.PHONY : src/parse.cpp.i
-
-src/parse.s: src/parse.cpp.s
-.PHONY : src/parse.s
-
-# target to generate assembly for a file
-src/parse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.s
-.PHONY : src/parse.cpp.s
-
-src/token.o: src/token.cpp.o
-.PHONY : src/token.o
-
-# target to build an object file
-src/token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o
-.PHONY : src/token.cpp.o
-
-src/token.i: src/token.cpp.i
-.PHONY : src/token.i
-
-# target to preprocess a source file
-src/token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.i
-.PHONY : src/token.cpp.i
-
-src/token.s: src/token.cpp.s
-.PHONY : src/token.s
-
-# target to generate assembly for a file
-src/token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PowerPoint-CLI.dir/build.make CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.s
-.PHONY : src/token.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,21 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PowerPoint-CLI"
+	@echo "... src/Lexer/lexer.o"
+	@echo "... src/Lexer/lexer.i"
+	@echo "... src/Lexer/lexer.s"
+	@echo "... src/Lexer/token.o"
+	@echo "... src/Lexer/token.i"
+	@echo "... src/Lexer/token.s"
+	@echo "... src/Parser/parse.o"
+	@echo "... src/Parser/parse.i"
+	@echo "... src/Parser/parse.s"
 	@echo "... src/cli.o"
 	@echo "... src/cli.i"
 	@echo "... src/cli.s"
-	@echo "... src/lexer.o"
-	@echo "... src/lexer.i"
-	@echo "... src/lexer.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parse.o"
-	@echo "... src/parse.i"
-	@echo "... src/parse.s"
-	@echo "... src/token.o"
-	@echo "... src/token.i"
-	@echo "... src/token.s"
 .PHONY : help
 
 

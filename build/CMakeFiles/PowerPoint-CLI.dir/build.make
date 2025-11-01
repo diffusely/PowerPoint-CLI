@@ -69,38 +69,10 @@ include CMakeFiles/PowerPoint-CLI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PowerPoint-CLI.dir/flags.make
 
-CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
-CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp
-CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp
-
-CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp > CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i
-
-CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s
-
-CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
-CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/lexer.cpp
-CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/lexer.cpp
-
-CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/lexer.cpp > CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.i
-
-CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/lexer.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.s
-
 CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
 CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/main.cpp
 CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/main.cpp
 
 CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.i: cmake_force
@@ -111,50 +83,78 @@ CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/main.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.s
 
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/parse.cpp
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/parse.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
+CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp
 
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/parse.cpp > CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.i
+CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp > CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.i
 
-CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/parse.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.s
+CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/cli.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.s
 
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/token.cpp
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/token.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/lexer.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/lexer.cpp
 
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/token.cpp > CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.i
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/lexer.cpp > CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.i
 
-CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/token.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.s
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/lexer.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.s
+
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/token.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/token.cpp
+
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/token.cpp > CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.i
+
+CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Lexer/token.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.s
+
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o: CMakeFiles/PowerPoint-CLI.dir/flags.make
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o: /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Parser/parse.cpp
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o: CMakeFiles/PowerPoint-CLI.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o -MF CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o.d -o CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o -c /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Parser/parse.cpp
+
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Parser/parse.cpp > CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.i
+
+CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src/Parser/parse.cpp -o CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.s
 
 # Object files for target PowerPoint-CLI
 PowerPoint__CLI_OBJECTS = \
-"CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o" \
-"CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o" \
 "CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o" \
-"CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o" \
-"CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o"
+"CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o" \
+"CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o" \
+"CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o" \
+"CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o"
 
 # External object files for target PowerPoint-CLI
 PowerPoint__CLI_EXTERNAL_OBJECTS =
 
-PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o
-PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o
 PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o
-PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o
-PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o
+PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o
+PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/Lexer/lexer.cpp.o
+PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/Lexer/token.cpp.o
+PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/src/Parser/parse.cpp.o
 PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/build.make
 PowerPoint-CLI: CMakeFiles/PowerPoint-CLI.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable PowerPoint-CLI"

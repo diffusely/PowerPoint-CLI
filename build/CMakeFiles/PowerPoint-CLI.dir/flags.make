@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes -I/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/src
+CXX_INCLUDES = -I/home/nor/Desktop/Synospsy/course4/PowerPoint-CLI/includes
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic -Werror
+CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
 
