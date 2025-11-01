@@ -1,8 +1,5 @@
 #include "../includes/cli.h"
 
-
-
-
 int main()
 {
 	CLI cl;

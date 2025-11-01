@@ -1,10 +1,14 @@
 #include "cli.h"
-
+#include "parser.h"
+#include <memory>
+#include <fstream>
 
 CLI::CLI() : m_over(true)
 {
-
+    m_parser = std::make_unique<Parser>();
 }
+
+CLI::~CLI() = default;
 
 void CLI::run()
 {
@@ -13,14 +17,12 @@ void CLI::run()
 		input();
 		if (is_empty())
 			continue;
-		parse();
-		valid_cmd();
-		//print_cmd();
 		
-
+		parse();
+		
 		if (!m_cmd.empty())
 			m_cmd.clear();
-		if (m_input == std::string("exit"))
+		if (m_input == std::string("exit") || m_input == std::string("quit"))
 			m_over = false;
 	}
 }
@@ -37,6 +39,19 @@ void CLI::input()
 }
 
 void CLI::parse()
+{
+
+	auto command = m_parser->parse(m_input);
+	
+	if (command) {
+		exec(*command);
+	} else {
+		parseOldStyle();
+		valid_cmd();
+	}
+}
+
+void CLI::parseOldStyle()
 {
 	size_t size = m_input.size();
 
@@ -57,8 +72,49 @@ void CLI::parse()
 
 void CLI::exec()
 {
-	// add slide -a 500 -b 400
-	// remove slide
+
+}
+
+void CLI::exec(const Command& command)
+{
+	std::string cmdName = command.name;
+	
+	if (cmdName == "add") {
+		const auto* addCmd = dynamic_cast<const AddSlideCommand*>(&command);
+		if (addCmd) {
+			executeAdd(*addCmd);
+		}
+	} else if (cmdName == "remove") {
+		const auto* removeCmd = dynamic_cast<const RemoveSlideCommand*>(&command);
+		if (removeCmd) {
+			executeRemove(*removeCmd);
+		}
+	} else if (cmdName == "export") {
+		const auto* exportCmd = dynamic_cast<const ExportCommand*>(&command);
+		if (exportCmd) {
+			executeExport(*exportCmd);
+		}
+	} else if (cmdName == "show") {
+		const auto* showCmd = dynamic_cast<const ShowCommand*>(&command);
+		if (showCmd) {
+			executeShow(*showCmd);
+		}
+	} else if (cmdName == "help") {
+		executeHelp();
+	} else if (cmdName == "exit" || cmdName == "quit") {
+		std::cout << "CL: Goodbye!" << std::endl;
+		m_over = false;
+	} else if (cmdName == "clear") {
+		m_slides.clear();
+		std::cout << "CL: Presentation cleared" << std::endl;
+	} else if (cmdName == "history") {
+		std::cout << "CL: Slides in presentation: " << m_slides.size() << std::endl;
+		for (size_t i = 0; i < m_slides.size(); ++i) {
+			std::cout << "  [" << i << "] \"" << m_slides[i].first << "\"" << std::endl;
+		}
+	} else {
+		std::cout << "CL: Unknown command: " << cmdName << std::endl;
+	}
 }
 
 CmdType CLI::get_type() const
@@ -118,6 +174,21 @@ void CLI::valid_cmd()
 		}
 		break;
 	}
+	case CmdType::EXPORT:
+	{
+		std::cout << "CL: Export command (handled by parser)" << std::endl;
+		break;
+	}
+	case CmdType::SHOW:
+	{
+		std::cout << "CL: Show command (handled by parser)" << std::endl;
+		break;
+	}
+	case CmdType::HISTORY:
+	{
+		std::cout << "CL: History command (handled by parser)" << std::endl;
+		break;
+	}
 	case CmdType::UNKNOWN:
 	{
 		std::cout << "CL: command '" << m_cmd[0] << "' not recognized\n";
@@ -141,4 +212,97 @@ bool CLI::is_empty()
 	if (i == m_input.size())
 		return true;
 	return false;
+}
+
+void CLI::executeAdd(const AddSlideCommand& cmd)
+{
+	m_slides.emplace_back(cmd.title, cmd.content);
+	std::cout << "CL: Added slide #" << (m_slides.size() - 1) 
+			  << " - \"" << cmd.title << "\"" << std::endl;
+}
+
+void CLI::executeRemove(const RemoveSlideCommand& cmd)
+{
+	if (cmd.slideIndex >= 0 && static_cast<size_t>(cmd.slideIndex) < m_slides.size()) {
+		std::string title = m_slides[cmd.slideIndex].first;
+		m_slides.erase(m_slides.begin() + cmd.slideIndex);
+		std::cout << "CL: Removed slide #" << cmd.slideIndex 
+				  << " - \"" << title << "\"" << std::endl;
+	} else {
+		std::cout << "CL: Invalid slide index: " << cmd.slideIndex 
+				  << " (0-" << (m_slides.size() - 1) << ")" << std::endl;
+	}
+}
+
+void CLI::executeExport(const ExportCommand& cmd)
+{
+	std::ofstream file(cmd.filename);
+	if (!file.is_open()) {
+		std::cout << "CL: Failed to create file: " << cmd.filename << std::endl;
+		return;
+	}
+	
+	if (cmd.format == "html") {
+		// Export as HTML
+		file << "<!DOCTYPE html>\n<html><head><title>PowerPoint CLI Export</title>\n";
+		file << "<style>\n";
+		file << ".slide { border: 1px solid #ccc; margin: 20px; padding: 15px; }\n";
+		file << ".title { font-size: 18px; font-weight: bold; margin-bottom: 10px; }\n";
+		file << ".content { font-size: 14px; }\n";
+		file << "</style>\n</head><body>\n";
+		file << "<h1>PowerPoint CLI Presentation</h1>\n";
+		
+		for (size_t i = 0; i < m_slides.size(); ++i) {
+			file << "<div class=\"slide\">\n";
+			file << "<div class=\"title\">Slide " << (i+1) << ": " << m_slides[i].first << "</div>\n";
+			file << "<div class=\"content\">" << m_slides[i].second << "</div>\n";
+			file << "</div>\n";
+		}
+		
+		file << "</body></html>";
+	} else {
+		// Export as plain text
+		file << "PowerPoint CLI Presentation\n";
+		file << "==========================\n\n";
+		
+		for (size_t i = 0; i < m_slides.size(); ++i) {
+			file << "Slide " << (i+1) << ": " << m_slides[i].first << "\n";
+			file << m_slides[i].second << "\n\n";
+		}
+	}
+	
+	file.close();
+	std::cout << "CL: Exported " << m_slides.size() << " slides to " << cmd.filename << std::endl;
+}
+
+void CLI::executeShow(const ShowCommand& cmd)
+{
+	if (cmd.target == "presentation") {
+		std::cout << "\n=== PowerPoint CLI Presentation ===" << std::endl;
+		if (m_slides.empty()) {
+			std::cout << "(No slides in presentation)" << std::endl;
+		} else {
+			for (size_t i = 0; i < m_slides.size(); ++i) {
+				std::cout << "\n--- Slide " << (i+1) << " ---" << std::endl;
+				std::cout << "Title: " << m_slides[i].first << std::endl;
+				std::cout << "Content: " << m_slides[i].second << std::endl;
+			}
+		}
+		std::cout << "==================================\n" << std::endl;
+	} else {
+		std::cout << "CL: Unknown show target: " << cmd.target << std::endl;
+	}
+}
+
+void CLI::executeHelp()
+{
+	std::cout << "\n=== PowerPoint CLI Commands ===" << std::endl;
+	std::cout << "add slide \"title\" \"content\" - Add a new slide" << std::endl;
+	std::cout << "remove [slide] N             - Remove slide by index" << std::endl;
+	std::cout << "show presentation            - Display all slides" << std::endl;
+	std::cout << "history                      - Show slide count and titles" << std::endl;
+	std::cout << "clear                        - Clear all slides" << std::endl;
+	std::cout << "help                         - Show this help" << std::endl;
+	std::cout << "exit / quit                  - Exit the program" << std::endl;
+	std::cout << "===============================" << std::endl;
 }

@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/PowerPoint-CLI.dir/src/cli.cpp.o" "CMakeFiles/PowerPoint-CLI.dir/src/lexer.cpp.o" "CMakeFiles/PowerPoint-CLI.dir/src/main.cpp.o" "CMakeFiles/PowerPoint-CLI.dir/src/parse.cpp.o" "CMakeFiles/PowerPoint-CLI.dir/src/token.cpp.o" -o PowerPoint-CLI 
